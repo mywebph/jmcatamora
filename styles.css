@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+/*   ROOT  */
+:root{
+    --lightgray: #cccccc;
+    --darkgray: gray;
+}
+::selection{
+    color: #fff;
+    background: var(--darkgray);
+}
+body{
+    background: linear-gradient(to right, var(--lightgray), rgb(245, 240, 240));
+}
+/*   HEADER   */
+.header{
+    position: relative;
+}
+.header .cover{
+    background-image: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0)), url(images/cover.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.header .profile-pic img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--lightgray);
+    position: absolute;
+    cursor: pointer;
+}
+.header-text{
+    text-align: center;
+}
+.header-text .name{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--darkgray);
+}
+.header-text .web{
+    font-size: 14px;
+    text-decoration: underline;
+    margin: 10px 0;
+    color: var(--darkgray);
+    cursor: pointer;
+}
+/*  MAIN  */
+.main{
+    margin-top: 20px;
+}
+.main ul{
+    display: flex;
+    flex-direction: row;
+}
+.main ul li a{
+    color: var(--darkgray);
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    cursor: pointer;
+    padding: 16px 10px;
+    border-radius: 4px;
+}
+.main li a:hover{
+    background: rgb(197, 194, 194);
+}
+.main ul li a.active::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: var(--darkgray);
+    top: 90%;
+    left: 0;
+}
+/*  ACCOUNTS  */
+.accounts .account_container{
+    display: flex;
+    flex-direction: row;
+    padding: 7px 10px;
+    width: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 5px var(--darkgray);
+    border: 1px solid transparent;
+    position: relative;
+    color: var(--darkgray);
+    margin: 10px 0;
+    cursor: pointer;
+}
+.accounts .account_container:hover{
+    box-shadow: 0 0 7px var(--darkgray);
+    transition: .2s;
+    border: 1px solid var(--darkgray);
+}
+.accounts .title{
+    font-weight: bold;
+}
+.accounts .link{
+    font-size: 12px;
+}
+.accounts .icon{
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.accounts .account-link{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+/*  GALLERY  */
+.gallery .photos img, .videos video{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 0 2px #000;
+    cursor: pointer;
+}
+.photos, .videos{
+    background: rgb(245, 242, 242);
+    padding: 10px 10px 50px;
+    border-radius: 5px;
+}
+/*  FOOTER  */
+.footer{
+    padding: 50px 0;
+}
+.footer p{
+    font-size: 14px;
+    color: var(--darkgray);
+}
+/*  VIEW CONTENT  */
+.view{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0,0,0,.9);
+    top: 0;
+    visibility: hidden;
+}

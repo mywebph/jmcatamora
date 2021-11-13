@@ -1,0 +1,133 @@
+/*  MOBILE SIZES  */
+@media screen and (max-width:480px) {
+    .cover{
+        height: 150px;
+    }
+    .header-text{
+        margin: 100px 0 50px;
+    }
+    .profile-pic img{
+        left: 50%;
+        top: 60%;
+        transform: translateX(-50%);
+    }
+    .nav{
+        margin-top: 30px;
+    }
+    .main-content{
+        margin-top: 50px;
+    }
+    .main{
+        padding: 0 30px;
+    }
+    .photos{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .videos{
+        text-align: center;
+    }
+    .accounts{
+        
+        margin: 50px 0 100px;
+    }
+}
+/*  IPADS, TABLETS SIZES  */
+@media screen and (min-width:481px){
+    .cover{
+        height: 200px;
+        border-radius: 0 0 4px 4px;
+    }
+    .profile-pic img{
+        left: 50%;
+        top: 70%;
+        transform: translateX(-50%);
+    }
+    .body_container{
+        padding: 0 30px;
+    }
+    .header-text{
+        margin: 100px 0 50px;
+    }
+    .nav{
+        margin-top: 30px;
+    }
+    .main-content{
+        margin-top: 50px;
+    }
+    .main{
+        padding: 0 30px;
+    }
+    .photos{
+        margin-bottom: 20px;
+    }
+    .photos, .videos{
+        padding-left: 50px;
+    }
+    .accounts{
+        padding: 0 30px;
+        margin: 50px 0 100px;
+    }
+}
+@media screen and (min-width:600px){
+    .accounts{
+        padding: 0 100px;
+    }
+    .header{
+        padding: 0 50px;
+    }
+}
+
+/*  SMALL SCREENS, LAPTOPS SIZES  */
+@media screen and (min-width:769px){
+    .header{
+        padding: 0 100px;
+    }
+    .accounts{
+        padding: 0 150px;
+    }
+}
+@media screen and (min-width:850px){
+    .accounts{
+        padding: 0 200px;
+    }
+    .gallery{
+        padding: 0 100px;
+    }
+
+}
+
+/*  DESKTOPS, LARGE SCREENS  */
+@media screen and (min-width: 1025px) {
+    .body_container{
+        padding: 0 100px;
+    }
+    .cover{
+        height: 250px;
+    }
+}
+
+/*  EXTRA LARGE SCREENS, TV SIZES  */
+@media screen and (min-width:1201px){
+    .body_container{
+        padding: 0 300px;
+    }
+    .header{
+        padding: 0 0;
+    }
+    .main{
+        padding: 0 0;
+    }
+    .gallery{
+        padding: 0 0;
+    }
+    .accounts{
+        margin-top: 100px;
+        padding: 0 150px;
+    }
+}
+@media screen and (min-width:1401px){
+    .body_container{
+        padding: 0 350px;
+    }
+}
