@@ -3,14 +3,14 @@
                 <div class="icon"><i class="fab fa-facebook"></i></div>
                 <div class="account-link">
                     <span class="title">Facebook</span>
-                    <span class="link">https://www.facebook.com/catamora.07/</span>
+                    <span class="link">shorturl.at/ewEX2</span>
                 </div>
             </div>
             <div class="instagram account_container">
                 <div class="icon"><i class="fab fa-instagram"></i></div>
                 <div class="account-link">
                     <span class="title">Instagram</span>
-                    <span class="link">https://www.instagram.com/catamora.jm/</span>
+                    <span class="link">shorturl.at/cqwEJ</span>
                 </div>
             </div>
             <div class="youtube account_container">
@@ -24,14 +24,14 @@
                 <div class="icon"><i class="fab fa-github"></i></div>
                 <div class="account-link">
                     <span class="title">Github</span>
-                    <span class="link">https://github.com/1910598john/</span>
+                    <span class="link">shorturl.at/kCPUX</span>
                 </div>
             </div>
             <div class="steam account_container">
                 <div class="icon"><i class="fab fa-steam"></i></div>
                 <div class="account-link">
                     <span class="title">Steam</span>
-                    <span class="link">https://steamcommunity.com/id/230658225/</span>
+                    <span class="link">shorturl.at/GL568</span>
                 </div>
             </div>
         </div>

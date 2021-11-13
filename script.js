@@ -27,32 +27,64 @@ $(document).ready(function(){
         $("#accounts").attr("class", "active");
     })
     //OPEN LINKS
-    $(".web").click(function(){
+    $(".web").on("click", function(){
         window.open("https://1910598john.github.io/jmcatamora/", "_blank")
     })
-    $(".facebook").click(function(){
-        window.open("https://shorturl.at/ewEX2", "_blank");
+    $(".facebook").live("click", function(){
+        window.open("https://www.facebook.com/catamora.07/", "_blank");
     })
-    $(".instagram").click(function(){
-        window.open("https://shorturl.at/cqwEJ", "_blank");
+    $(".instagram").live("click", function(){
+        window.open("https://www.instagram.com/catamora.jm/", "_blank");
     })
-    $(".youtube").click(function(){
+    $(".youtube").live("click", function(){
         window.open("https://shorturl.at/deuK9", "_blank");
     })
-    $(".github").click(function(){
-        window.open("https://shorturl.at/kCPUX", "_blank");
+    $(".github").live("click", function(){
+        window.open("https://github.com/1910598john", "_blank");
     })
-    $(".steam").click(function(){
-        window.open("https://shorturl.at/fhH04", "_blank");
+    $(".steam").live("click", function(){
+        window.open("https://www.steamcommunity.com/id/230658225/", "_blank");
     })
-    $("img").click(function(){
-        $(".view").css("visibility", "visible");
-        var content = $(this).clone();
-        $(".view .content").append(content);
-        $(".content").css({
+    //VIEW CONTENT
+    $("img").live("click",function(){
+       var content = $(this).clone();
+       $(".view").css({
+           "visibility" : "visible",
+       });
+       $(".view .content").append(content);
+
+       if ($(window).width() <= 768) {
+          $(".content").css({
+              "position" : "absolute",
+              "top" : "50%",
+              "left" : "50%",
+              "transform" : "translate(-50%, -50%)",
+              "width" : "250px",
+              "height" : "300px",
+          });
+          $(".content img, .content video").css({
+              "width" : "100%",
+              "height" : "100%",
+              "object-fit" : "cover",
+          })
+       }
+       else {
+          $(".content").css({
             "position" : "absolute",
             "left" : "50%",
-            "transform" : "translateX(-50%)"
-        })
-    })
+            "transform" : "translateX(-50%)",
+            "width" : "40%",
+            "height" : "100%",
+          })
+          $(".content img, .content video").css({
+            "width" : "100%",
+            "height" : "100%",
+            "object-fit" : "cover"
+          })
+       }
+   })
+   $(".view").click(function(){
+       $(".content img, .content video").remove();
+       $(this).css("visibility", "hidden");
+   })
 })

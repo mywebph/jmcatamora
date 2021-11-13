@@ -123,8 +123,6 @@ body{
 }
 /*  GALLERY  */
 .gallery .photos img, .videos video{
-    width: 150px;
-    height: 150px;
     object-fit: cover;
     border-radius: 10px;
     margin: 5px;
@@ -149,7 +147,7 @@ body{
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background: rgba(0,0,0,.9);
+    background: black;
     top: 0;
     visibility: hidden;
 }

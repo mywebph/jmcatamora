@@ -1,4 +1,16 @@
 /*  MOBILE SIZES  */
+@media screen and (min-width:200px){
+    .photos img, .videos video{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (min-width:404px){
+    .photos img, .videos video{
+        width: 150px;
+        height: 150px;
+    }
+}
 @media screen and (max-width:480px) {
     .cover{
         height: 150px;
@@ -28,12 +40,15 @@
         text-align: center;
     }
     .accounts{
-        
         margin: 50px 0 100px;
     }
 }
 /*  IPADS, TABLETS SIZES  */
 @media screen and (min-width:481px){
+    .photos img, .videos video{
+        width: 150px;
+        height: 150px;
+    }
     .cover{
         height: 200px;
         border-radius: 0 0 4px 4px;
