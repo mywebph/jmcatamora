@@ -75,7 +75,7 @@ $(document).ready(function(){
               "position" : "absolute",
               "top" : "50%",
               "transform" : "translateY(-50%)",
-              "background" : "#fff"
+              "background" : "#000"
           })
           $(".view video").css("background", "#000");
           $(".close").css({
