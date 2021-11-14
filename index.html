@@ -12,8 +12,8 @@
 <div class="body_container">
     <div class="header">
         <div class="profile">
-            <div class="cover">
-                <img src="images/cover.jpg" style="display:none;">
+            <div class="cover" id="cover">
+                <img class="image" src="images/cover.jpg" style="display:none;">
             </div>
             <div class="profile-pic">
                 <img src="images/dp.jpg">
@@ -22,14 +22,15 @@
     </div>
     <div class="header-text">
         <p class="name">JM Catamora</p>
-        <p class="web">https://1910598john.github.io/jmcatamora/</p>
+        <p><a class="web">https://1910598john.github.io/jmcatamora/</a></p>
     </div>
     <hr style="opacity: .2;">
     <div class="main">
         <div class="nav">
             <ul>
                 <li><a id="accounts" class="active">Accounts</a></li>
-                <li><a id="gallery">Gallery</a></li>
+                <li><a id="photos">Photos</a></li>
+                <li><a id="videos">Videos</a></li>
             </ul>
         </div>
         <div class="main-content" id="main-content">
@@ -77,11 +78,13 @@
         <p style="text-align: center;">1910598john@gmail.com | JM Catamora</p>
     </div>
 </div>
-<div class="view">
-    <div class="content"></div>
+<div class="view" id="view">
+    <div class="close">Close</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js">
+</script>
 <script src="script.js"></script>
 </body>
 </html>

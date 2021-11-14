@@ -38,6 +38,7 @@ body{
     border: 3px solid var(--lightgray);
     position: absolute;
     cursor: pointer;
+    z-index: 2;
 }
 .header-text{
     text-align: center;
@@ -64,7 +65,6 @@ body{
 }
 .main ul li a{
     color: var(--darkgray);
-    margin: 0 10px;
     font-size: 15px;
     font-weight: bold;
     font-family: sans-serif;
@@ -150,4 +150,17 @@ body{
     background: black;
     top: 0;
     visibility: hidden;
+    z-index: 5;
+}
+.view .close{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    font-size: 20px;
+}
+.close:hover{
+    text-decoration: underline;
 }
