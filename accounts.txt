@@ -1,33 +1,33 @@
 <div class="accounts" id="acc2">
-            <div class="facebook account_container">
+            <div class="facebook account_container" title="Add me on Facebook.">
                 <div class="icon"><i class="fab fa-facebook"></i></div>
                 <div class="account-link">
                     <span class="title">Facebook</span>
                     <span class="link">shorturl.at/ewEX2</span>
                 </div>
             </div>
-            <div class="instagram account_container">
+            <div class="instagram account_container" title="Follow me on Instagram.">
                 <div class="icon"><i class="fab fa-instagram"></i></div>
                 <div class="account-link">
                     <span class="title">Instagram</span>
                     <span class="link">shorturl.at/cqwEJ</span>
                 </div>
             </div>
-            <div class="youtube account_container">
+            <div class="youtube account_container" title="Check out my Youtube.">
                 <div class="icon"><i class="fab fa-youtube"></i></div>
                 <div class="account-link">
                     <span class="title">Youtube</span>
                     <span class="link">shorturl.at/deuK9</span>
                 </div>
             </div>
-            <div class="github account_container">
+            <div class="github account_container" title="Follow me on Github.">
                 <div class="icon"><i class="fab fa-github"></i></div>
                 <div class="account-link">
                     <span class="title">Github</span>
                     <span class="link">shorturl.at/kCPUX</span>
                 </div>
             </div>
-            <div class="steam account_container">
+            <div class="steam account_container" title="Add me on Steam.">
                 <div class="icon"><i class="fab fa-steam"></i></div>
                 <div class="account-link">
                     <span class="title">Steam</span>

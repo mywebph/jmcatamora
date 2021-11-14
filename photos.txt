@@ -4,5 +4,13 @@
       <img src="images/photos/img1.jpg">
       <img src="images/photos/img2.jpg">
       <img src="images/photos/img3.jpg">
+      <img src="images/photos/img4.png">
+      <img src="images/photos/img5.png">
+      <img src="images/photos/img6.png">
+      <img src="images/photos/img7.jpg">
+      <img src="images/photos/img8.jpg">
+      <img src="images/photos/img9.jpg">
+      <img src="images/photos/img10.jpg">
+      <img src="images/photos/img11.jpg">
   </div>
 </div>

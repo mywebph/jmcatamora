@@ -17,6 +17,7 @@
     background: var(--darkgray);
 }
 body{
+    overflow-y: hidden;
     background: linear-gradient(to right, var(--lightgray), rgb(245, 240, 240));
 }
 /*   HEADER   */
@@ -163,4 +164,27 @@ body{
 }
 .close:hover{
     text-decoration: underline;
+}
+.preload{
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to right, var(--lightgray), rgb(245, 240, 240));
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+    overflow-y: scroll;
+}
+.preload_container{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -35%);
+}
+.preload p{
+	font-size: 2em;
+	color: var(--darkgray);
+	margin: 20px 0;
+	font-family: sans-serif;
 }

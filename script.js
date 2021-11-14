@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    var preload = document.getElementById("preload");
+    window.addEventListener("load", hidePreloader);
+    function hidePreloader(){
+        preload.style.display = "none";
+        document.body.style.overflowY = "visible";
+    }
     document.getElementById("photos").addEventListener("click", photos);
     document.getElementById("videos").addEventListener("click", videos);
     document.getElementById("accounts").addEventListener("click", accounts);
@@ -57,7 +63,9 @@ $(document).ready(function(){
            "visibility" : "visible",
        });
        $(".view").append(content);
-       
+       $("body").css("overflow-y", "hidden");
+       $(".body_container").css("overflow-y", "scroll");
+       $(".view").css("overflow-y", "scroll");
        if ($(window).width() <= 768) {
           $(".view img, .view video").css({
               "display" : "block",
@@ -69,6 +77,7 @@ $(document).ready(function(){
               "transform" : "translateY(-50%)",
               "background" : "#fff"
           })
+          $(".view video").css("background", "#000");
           $(".close").css({
             "top" : "5%"
         })
@@ -82,6 +91,9 @@ $(document).ready(function(){
             "position" : "absolute",
             "left" : "50%",
             "transform" : "translateX(-50%)",
+          })
+          $(".view video").css({
+              "object-fit" : "contain"
           })
        }
        var video = $(".view video");
@@ -124,5 +136,8 @@ $(document).ready(function(){
     $(".close").click(function(){
         $(".view").css("visibility", "hidden");
         $(".view img, .view video").remove();
+        $("body").css("overflow-y", "visible");
+        $(".body_container").css("overflow-y", "visible");
+        $(".view").css("overflow-y", "visible");
     })
 })
