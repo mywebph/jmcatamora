@@ -12,6 +12,13 @@
     }
 }
 @media screen and (max-width:480px) {
+    .verified-tooltip{
+        left: -520%;
+        z-index: 3;
+    }
+    .verified-tooltip::before{
+        left: 70%;
+    }
     .cover{
         height: 150px;
     }
