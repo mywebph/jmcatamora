@@ -77,7 +77,6 @@ $(document).ready(function(){
               "transform" : "translateY(-50%)",
               "background" : "#000"
           })
-          $(".view video").css("background", "#000");
           $(".close").css({
             "top" : "5%"
         })
