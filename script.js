@@ -1,4 +1,16 @@
 $(document).ready(function(){
+    const req = new XMLHttpRequest();
+    req.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("main-content").innerHTML = this.responseText;
+            $("ul li a").click(function(){
+                $("li a").removeAttr("class");
+                $(this).attr("class", "active");
+            })
+        }
+    }
+    req.open("GET", "accounts.txt");
+    req.send();
     var preload = document.getElementById("preload");
     window.addEventListener("load", hidePreloader);
     function hidePreloader(){
@@ -10,33 +22,46 @@ $(document).ready(function(){
     document.getElementById("accounts").addEventListener("click", accounts);
     function photos(){
         const req = new XMLHttpRequest();
-        req.onload = function() {
-          document.getElementById("main-content").innerHTML = this.responseText;
+        req.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("main-content").innerHTML = this.responseText;
+            $("ul li a").click(function(){
+                $("li a").removeAttr("class");
+                $(this).attr("class", "active");
+            })
+          }
         }
         req.open("GET", "photos.txt");
         req.send();
     }
     function videos(){
         const req = new XMLHttpRequest();
-        req.onload = function() {
-          document.getElementById("main-content").innerHTML = this.responseText;
+        req.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("main-content").innerHTML = this.responseText;
+                $("ul li a").click(function(){
+                    $("li a").removeAttr("class");
+                    $(this).attr("class", "active");
+                })
+            }
         }
         req.open("GET", "videos.txt");
         req.send();
     }
     function accounts(){
         const req = new XMLHttpRequest();
-        req.onload = function() {
-          document.getElementById("main-content").innerHTML = this.responseText;
+        req.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("main-content").innerHTML = this.responseText;
+                $("ul li a").click(function(){
+                    $("li a").removeAttr("class");
+                    $(this).attr("class", "active");
+                })
+            }
         }
         req.open("GET", "accounts.txt");
         req.send();
     }
-    //REMOVE AND ADD CLASS ATTRIBUTE
-    $("ul li a").click(function(){
-        $("li a").removeAttr("class");
-        $(this).attr("class", "active");
-    })
     //OPEN LINKS
     $(".web").on("click", function(){
         window.open("https://1910598john.github.io/jmcatamora/", "_blank")
