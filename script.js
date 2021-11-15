@@ -132,6 +132,9 @@ $(document).ready(function(){
        var img = $(this).children("img:first-child").clone();
        $(".view").append(img);
        $(".view").css("visibility", "visible");
+       $("body").css("overflow-y", "hidden");
+       $(".body_container").css("overflow-y", "scroll");
+       $(".view").css("overflow-y", "scroll");
        if ($(window).width() <= 768) {
            $(".view img").css({
                "display" : "block",

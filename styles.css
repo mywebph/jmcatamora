@@ -131,7 +131,7 @@ body{
     padding: 7px 10px;
     width: auto;
     border-radius: 4px;
-    box-shadow: 0 0 5px var(--darkgray);
+    box-shadow: 0 0 4px var(--darkgray);
     border: 1px solid transparent;
     position: relative;
     color: var(--darkgray);
@@ -139,9 +139,9 @@ body{
     cursor: pointer;
 }
 .accounts .account_container:hover{
-    box-shadow: 0 0 7px var(--darkgray);
+    box-shadow: 0 0 10px var(--darkgray);
     transition: .2s;
-    border: 1px solid var(--darkgray);
+    border: 1px solid transparent;
 }
 .accounts .title{
     font-weight: bold;
@@ -190,6 +190,7 @@ body{
     top: 0;
     visibility: hidden;
     z-index: 5;
+    overflow: hidden;
 }
 .view .close{
     position: absolute;
