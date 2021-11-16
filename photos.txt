@@ -12,5 +12,6 @@
       <img src="images/photos/img9.jpg">
       <img src="images/photos/img10.jpg">
       <img src="images/photos/img11.jpg">
+      <img src="images/photos/img12.png">
   </div>
 </div>
