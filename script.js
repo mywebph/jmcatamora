@@ -92,7 +92,7 @@ $(document).ready(function(){
        $(".body_container").css("overflow-y", "scroll");
        $(".view").css("overflow-y", "scroll");
        if ($(window).width() <= 768) {
-          $(".view img, .view video").css({
+          $(".view .image, .view video").css({
               "display" : "block",
               "width" : "100%",
               "height" : "70%",
@@ -107,7 +107,7 @@ $(document).ready(function(){
         })
        }
        else {
-          $(".view img, .view video").css({
+          $(".view .image, .view video").css({
             "display" : "block",
             "width" : "40%",
             "height" : "100vh",
@@ -136,7 +136,7 @@ $(document).ready(function(){
        $(".body_container").css("overflow-y", "scroll");
        $(".view").css("overflow-y", "scroll");
        if ($(window).width() <= 768) {
-           $(".view img").css({
+           $(".view .image").css({
                "display" : "block",
                "position" : "absolute",
                "width" : "100%",
@@ -148,7 +148,7 @@ $(document).ready(function(){
            })
        }
        else{
-           $(".view img").css({
+           $(".view .image").css({
                "display" : "block",
                "position" : "absolute",
                "height" : "40%",
@@ -162,9 +162,32 @@ $(document).ready(function(){
     })
     $(".close").click(function(){
         $(".view").css("visibility", "hidden");
-        $(".view img, .view video").remove();
+        $(".view .image, .view video").remove();
         $("body").css("overflow-y", "visible");
         $(".body_container").css("overflow-y", "visible");
         $(".view").css("overflow-y", "visible");
     })
+    const month = new Array();
+    month[0] = "January";
+    month[1] = "February";
+    month[2] = "March";
+    month[3] = "April";
+    month[4] = "May";
+    month[5] = "June";
+    month[6] = "July";
+    month[7] = "August";
+    month[8] = "September";
+    month[9] = "October";
+    month[10] = "November";
+    month[11] = "December";
+    const now = new Date();
+    var hr = now.getHours();
+    var min = now.getMinutes();
+    if (min <= 10) {
+        min = "0" + min;
+    }
+    if (hr <= 10) {
+        hr = "0" + hr;
+    }
+    document.getElementById("time-now").innerHTML = month[now.getMonth()] + " " + now.getDate() + " at " + hr + ":" + min + ".";
 })

@@ -1,17 +1,17 @@
 <div class="gallery">
   <div class="photos">
     <p style="margin:20px 0;font-size:17px;font-weight:bold;color:var(--darkgray);">Photos</p>
-      <img src="images/photos/img1.jpg">
-      <img src="images/photos/img2.jpg">
-      <img src="images/photos/img3.jpg">
-      <img src="images/photos/img4.png">
-      <img src="images/photos/img5.png">
-      <img src="images/photos/img6.png">
-      <img src="images/photos/img7.jpg">
-      <img src="images/photos/img8.jpg">
-      <img src="images/photos/img9.jpg">
-      <img src="images/photos/img10.jpg">
-      <img src="images/photos/img11.jpg">
-      <img src="images/photos/img12.png">
+      <img class="image" src="images/photos/img1.jpg">
+      <img class="image"  src="images/photos/img2.jpg">
+      <img class="image"  src="images/photos/img3.jpg">
+      <img class="image"  src="images/photos/img4.png">
+      <img class="image"  src="images/photos/img5.png">
+      <img class="image"  src="images/photos/img6.png">
+      <img class="image"  src="images/photos/img7.jpg">
+      <img class="image"  src="images/photos/img8.jpg">
+      <img class="image"  src="images/photos/img9.jpg">
+      <img class="image"  src="images/photos/img10.jpg">
+      <img class="image"  src="images/photos/img11.jpg">
+      <img class="image"  src="images/photos/img12.png">
   </div>
 </div>

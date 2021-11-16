@@ -189,22 +189,89 @@ body{
     position: fixed;
     background: black;
     top: 0;
-    visibility: hidden;
+    visibility: visible;
     z-index: 5;
     overflow: hidden;
 }
 .view .close{
     position: absolute;
     top: 10%;
-    right: 10%;
-    color: #fff;
+    right: 5%;
+    color: #000;
     cursor: pointer;
     z-index: 5;
     font-size: 20px;
 }
+.view .content-details{
+    position: absolute;
+    height: 100vh;
+    width: 30%;
+    right: 0;
+    top: 0;
+    background: #fff;
+    padding-top: 150px;
+}
+.details{
+    padding: 20px;
+}
+.view .details .my-dp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#time-now{
+    font-size: 15px;
+    color: rgb(133, 127, 127);
+}
+.details .my_name{
+    font-weight: bold;
+    color: rgb(73, 71, 71);
+    cursor: pointer;
+}
+.details .my_name:hover{
+    text-decoration: underline;
+}
+.my-name{
+    margin-bottom: 20px;
+}
+.content-desc{
+    font-size: 15px;
+    color: rgb(58, 55, 55);
+}
+.comment-area{
+    width: 80%;
+    border-radius: 4px;
+    margin: 5px 10% 5px 5%;
+    resize: none;
+    padding: 5px;
+    border: 1px solid var(--lightgray);
+    caret-color: var(--darkgray);
+}
 .close:hover{
     text-decoration: underline;
 }
+.me{
+    display: flex;
+    flex-direction: row;
+}
+.comment-section{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 30px;
+}
+.comment-section a{
+    padding: 5px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--darkgray);
+}
+.comment-section a:hover{
+    background-color: var(--lightgray);
+}
+
+/*  PRELOAD  */
 .preload{
 	width: 100vw;
 	height: 100vh;
@@ -228,3 +295,4 @@ body{
 	margin: 20px 0;
 	font-family: sans-serif;
 }
+
