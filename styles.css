@@ -126,7 +126,10 @@ body{
     left: 0;
 }
 /*  ACCOUNTS  */
-.accounts .account_container{
+.contact-me{
+    padding: 30px 50px;
+}
+.accounts .account_container, .contact-me .account_container{
     display: flex;
     flex-direction: row;
     padding: 7px 10px;
@@ -139,24 +142,24 @@ body{
     margin: 10px 0;
     cursor: pointer;
 }
-.accounts .account_container:hover{
+.accounts .account_container:hover, .contact-me .account_container:hover{
     box-shadow: 0 0 10px var(--darkgray);
     transition: .2s;
     border: 1px solid transparent;
 }
-.accounts .title{
+.accounts .title, .contact-me .title{
     font-weight: bold;
 }
-.accounts .link{
+.accounts .link, .contact-me .link{
     font-size: 12px;
 }
-.accounts .icon{
+.accounts .icon, .contact-me .icon{
     font-size: 2em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
-.accounts .account-link{
+.accounts .account-link, .contact-me .account-link{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
@@ -189,7 +192,7 @@ body{
     position: fixed;
     background: black;
     top: 0;
-    visibility: visible;
+    visibility: hidden;
     z-index: 5;
     overflow: hidden;
 }
@@ -220,6 +223,7 @@ body{
     border-radius: 50%;
     margin-right: 10px;
     cursor: pointer;
+    object-fit: cover;
 }
 #time-now{
     font-size: 15px;
@@ -267,10 +271,48 @@ body{
     font-weight: bold;
     color: var(--darkgray);
 }
+.text{
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--darkgray);
+}
 .comment-section a:hover{
     background-color: var(--lightgray);
 }
-
+.react{
+    position: relative;
+}
+.react:hover .react-icons{
+    visibility: visible;
+    transition-delay: .3s;
+}
+.react-icons{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 2px var(--darkgray);
+    padding: 0 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    bottom: 150%;
+    left: -20%;
+    width: 220px;
+    height: 50px;
+    visibility: hidden;
+}
+.react-icons .emoji{
+    width: 50px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-top: -10px;
+    border: 5px solid transparent;
+}
+.react-icons .emoji:hover{
+    height: 80px;
+    border: 0 solid transparent;
+    transition: .5s;
+}
 /*  PRELOAD  */
 .preload{
 	width: 100vw;
@@ -295,4 +337,3 @@ body{
 	margin: 20px 0;
 	font-family: sans-serif;
 }
-

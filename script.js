@@ -91,7 +91,9 @@ $(document).ready(function(){
        $("body").css("overflow-y", "hidden");
        $(".body_container").css("overflow-y", "scroll");
        $(".view").css("overflow-y", "scroll");
+      
        if ($(window).width() <= 768) {
+          $(".content-info").css("display", "none");
           $(".view .image, .view video").css({
               "display" : "block",
               "width" : "100%",
@@ -106,8 +108,9 @@ $(document).ready(function(){
             "top" : "5%"
         })
        }
-       else {
-          $(".view .image, .view video").css({
+       else if ($(window).width() <= 820) {
+           $(".content-info").css("display", "none");
+           $(".view .image, .view video").css({
             "display" : "block",
             "width" : "40%",
             "height" : "100vh",
@@ -115,6 +118,24 @@ $(document).ready(function(){
             "position" : "absolute",
             "left" : "50%",
             "transform" : "translateX(-50%)",
+          })
+          $(".close").css({
+              "color" : "#fff"
+          })
+          $(".view video").css({
+              "object-fit" : "contain"
+          })
+       }
+       else {
+          
+          $(".view .image, .view video").css({
+            "display" : "block",
+            "width" : "40%",
+            "height" : "100vh",
+            "object-fit" : "cover",
+            "position" : "absolute",
+            "left" : "25%",
+            "transform" : "translateX(-25%)",
           })
           $(".view video").css({
               "object-fit" : "contain"
@@ -136,6 +157,7 @@ $(document).ready(function(){
        $(".body_container").css("overflow-y", "scroll");
        $(".view").css("overflow-y", "scroll");
        if ($(window).width() <= 768) {
+           $(".content-info").css("display", "none");
            $(".view .image").css({
                "display" : "block",
                "position" : "absolute",
@@ -147,6 +169,22 @@ $(document).ready(function(){
                "top" : "5%"
            })
        }
+       if ($(window).width() <= 820) {
+          $(".content-info").css("display", "none");
+          $(".view .image").css({
+            "display" : "block",
+            "position" : "absolute",
+            "height" : "40%",
+            "width" : "100%",
+            "object-fit" : "contain",
+            "top" : "50%",
+            "left" : "50%",
+            "transform" : "translate(-50%, -50%)"
+           })
+           $(".close").css({
+            "color" : "#fff"
+           })
+      }
        else{
            $(".view .image").css({
                "display" : "block",
@@ -155,11 +193,12 @@ $(document).ready(function(){
                "width" : "100%",
                "object-fit" : "contain",
                "top" : "50%",
-               "left" : "50%",
-               "transform" : "translate(-50%, -50%)"
+               "left" : "-15%",
+               "transform" : "translateY(-50%)"
            })
        }
     })
+    //CLOSE 
     $(".close").click(function(){
         $(".view").css("visibility", "hidden");
         $(".view .image, .view video").remove();
@@ -167,27 +206,101 @@ $(document).ready(function(){
         $(".body_container").css("overflow-y", "visible");
         $(".view").css("overflow-y", "visible");
     })
-    const month = new Array();
-    month[0] = "January";
-    month[1] = "February";
-    month[2] = "March";
-    month[3] = "April";
-    month[4] = "May";
-    month[5] = "June";
-    month[6] = "July";
-    month[7] = "August";
-    month[8] = "September";
-    month[9] = "October";
-    month[10] = "November";
-    month[11] = "December";
+    //DISPLAY TIME
     const now = new Date();
     var hr = now.getHours();
     var min = now.getMinutes();
-    if (min <= 10) {
+    if (min < 10) {
         min = "0" + min;
     }
-    if (hr <= 10) {
+    if (hr < 10) {
         hr = "0" + hr;
     }
-    document.getElementById("time-now").innerHTML = month[now.getMonth()] + " " + now.getDate() + " at " + hr + ":" + min + ".";
+    document.getElementById("time-now").innerHTML =  hr + ":" + min;
+    $(".cover").live("mouseover", function(){
+        $(".content-desc p").load("desc/cover.txt");
+    })
+    $(".dp").live("mouseover", function(){
+        $(".content-desc p").load("desc/dp.txt");
+    })
+    $(".image1").live("mouseover", function(){
+        $(".content-desc p").load("desc/image1.txt");
+    })
+    $(".image2").live("mouseover", function(){
+        $(".content-desc p").load("desc/image2.txt");
+    })
+    $(".image3").live("mouseover", function(){
+        $(".content-desc p").load("desc/image3.txt");
+    })
+    $(".image4").live("mouseover", function(){
+        $(".content-desc p").load("desc/image4.txt");
+    })
+    $(".image5").live("mouseover", function(){
+        $(".content-desc p").load("desc/image5.txt");
+    })
+    $(".image6").live("mouseover", function(){
+        $(".content-desc p").load("desc/image6.txt");
+    })
+    $(".image7").live("mouseover", function(){
+        $(".content-desc p").load("desc/image7.txt");
+    })
+    $(".image8").live("mouseover", function(){
+        $(".content-desc p").load("desc/image8.txt");
+    })
+    $(".image9").live("mouseover", function(){
+        $(".content-desc p").load("desc/image9.txt");
+    })
+    $(".image10").live("mouseover", function(){
+        $(".content-desc p").load("desc/image10.txt");
+    })
+    $(".image11").live("mouseover", function(){
+        $(".content-desc p").load("desc/image11.txt");
+    })
+    $(".image12").live("mouseover", function(){
+        $(".content-desc p").load("desc/image12.txt");
+    })
+
+    $(".vid1").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid1.txt");
+    })
+    $(".vid2").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid2.txt");
+    })
+    $(".vid3").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid3.txt");
+    })
+    $(".vid4").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid4.txt");
+    })
+    $(".vid5").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid5.txt");
+    })
+    $(".vid6").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid6.txt");
+    })
+    $(".vid7").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid7.txt");
+    })
+    $(".vid8").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid8.txt");
+    })
+    $(".vid9").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid9.txt");
+    })
+    $(".vid10").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid10.txt");
+    })
+    $(".vid11").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid11.txt");
+    })
+    $(".vid12").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid12.txt");
+    })
+    $(".vid13").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid13.txt");
+    })
+    $(".vid14").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid4.txt");
+    })
 })
+
