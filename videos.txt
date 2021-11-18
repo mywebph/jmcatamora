@@ -15,5 +15,13 @@
     <video class="vid vid12" src="videos/vid12.mp4"></video>
     <video class="vid vid13" src="videos/vid13.mp4"></video>
     <video class="vid vid14" src="videos/vid14.mp4"></video>
+    <video class="vid vid15" src="videos/vid15.mp4"></video>
+    <video class="vid vid16" src="videos/vid16.mp4"></video>
+    <video class="vid vid17" src="videos/vid17.mp4"></video>
+    <video class="vid vid18" src="videos/vid18.mp4"></video>
+    <video class="vid vid19" src="videos/vid19.mp4"></video>
+    <video class="vid vid20" src="videos/vid20.mp4"></video>
+    <video class="vid vid21" src="videos/vid21.mp4"></video>
+    <video class="vid vid22" src="videos/vid22.mp4"></video>
   </div>
 </div>

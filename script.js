@@ -105,6 +105,9 @@ $(document).ready(function(){
               "background" : "#000"
           })
           $(".close").css({
+            "color" : "#fff"
+          })
+          $(".close").css({
             "top" : "5%"
         })
        }
@@ -180,9 +183,6 @@ $(document).ready(function(){
             "top" : "50%",
             "left" : "50%",
             "transform" : "translate(-50%, -50%)"
-           })
-           $(".close").css({
-            "color" : "#fff"
            })
       }
        else{
@@ -300,7 +300,31 @@ $(document).ready(function(){
         $(".content-desc p").load("desc/vid13.txt");
     })
     $(".vid14").live("mouseover", function(){
-        $(".content-desc p").load("desc/vid4.txt");
+        $(".content-desc p").load("desc/vid14.txt");
+    })
+    $(".vid15").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid15.txt");
+    })
+    $(".vid16").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid16.txt");
+    })
+    $(".vid17").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid17.txt");
+    })
+    $(".vid18").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid18.txt");
+    })
+    $(".vid19").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid19.txt");
+    })
+    $(".vid20").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid20.txt");
+    })
+    $(".vid21").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid21.txt");
+    })
+    $(".vid22").live("mouseover", function(){
+        $(".content-desc p").load("desc/vid22.txt");
     })
 })
 
