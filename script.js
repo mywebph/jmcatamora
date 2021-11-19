@@ -62,7 +62,13 @@ $(document).ready(function(){
         req.open("GET", "accounts.txt");
         req.send();
     }
+    $(".view").click(function(){
+        $(".arrow").css("display", "block");
+    })
     //OPEN LINKS
+    $(".my_name, .my-dp").on("click", function(){
+        window.open("https://facebook.com/catamora.07/", "_blank")
+    })
     $(".web").on("click", function(){
         window.open("https://1910598john.github.io/jmcatamora/", "_blank")
     })
@@ -105,11 +111,16 @@ $(document).ready(function(){
               "background" : "#000"
           })
           $(".close").css({
-            "color" : "#fff"
-          })
-          $(".close").css({
             "top" : "5%"
-        })
+          })
+          $(".custom-hide-icon").css({
+              "width" : "30px",
+              "height" : "30px",
+          })
+          $(".custom-hide-icon div").css({
+              "width" : "25px",
+              "left" : "10%"
+          })
        }
        else if ($(window).width() <= 820) {
            $(".content-info").css("display", "none");
@@ -121,9 +132,6 @@ $(document).ready(function(){
             "position" : "absolute",
             "left" : "50%",
             "transform" : "translateX(-50%)",
-          })
-          $(".close").css({
-              "color" : "#fff"
           })
           $(".view video").css({
               "object-fit" : "contain"
@@ -205,6 +213,7 @@ $(document).ready(function(){
         $("body").css("overflow-y", "visible");
         $(".body_container").css("overflow-y", "visible");
         $(".view").css("overflow-y", "visible");
+        $(".arrow").css("visibility", "hidden");
     })
     //DISPLAY TIME
     const now = new Date();

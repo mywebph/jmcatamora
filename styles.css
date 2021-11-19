@@ -198,12 +198,32 @@ body{
 }
 .view .close{
     position: absolute;
-    top: 10%;
+    top: 5%;
     right: 5%;
-    color: #000;
     cursor: pointer;
     z-index: 5;
-    font-size: 20px;
+}
+.custom-hide-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    background: #fff;
+}
+.custom-hide-icon div{
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: rgb(122, 119, 119);
+    top: 50%;
+    left: 22%;
+    transform: translate(-22%, -50%);
+}
+.custom-hide-icon div:nth-child(1){
+    transform: rotate(45deg);
+}
+.custom-hide-icon div:nth-child(2){
+    transform: rotate(135deg);
 }
 .view .content-details{
     position: absolute;
@@ -213,6 +233,7 @@ body{
     top: 0;
     background: #fff;
     padding-top: 150px;
+    background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,1)), url(images/programming.jpg);
 }
 .details{
     padding: 20px;
@@ -228,6 +249,7 @@ body{
 #time-now{
     font-size: 15px;
     color: rgb(133, 127, 127);
+    margin: 5px 0;
 }
 .details .my_name{
     font-weight: bold;
@@ -259,6 +281,27 @@ body{
 .me{
     display: flex;
     flex-direction: row;
+}
+.arrow{
+    position: absolute;
+    top: 5%;
+    right: 40%;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    display: none;
+}
+@keyframes arrow{
+    from{
+        right: 40%;
+    }
+    to {
+        right: 30%;
+    }
+}
+.arrow .fas{
+    font-size: 3em;
+    color: rgb(65, 61, 61);
 }
 .comment-section{
     display: flex;
