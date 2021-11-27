@@ -31,7 +31,7 @@ $(document).ready(function(){
             })
           }
         }
-        req.open("GET", "photos.txt");
+        req.open("GET", "desc/photos.txt");
         req.send();
     }
     function videos(){
@@ -45,7 +45,7 @@ $(document).ready(function(){
                 })
             }
         }
-        req.open("GET", "videos.txt");
+        req.open("GET", "desc/videos.txt");
         req.send();
     }
     function accounts(){
@@ -111,16 +111,11 @@ $(document).ready(function(){
               "background" : "#000"
           })
           $(".close").css({
-            "top" : "5%"
+            "top" : "5%",
+            "right" : "5%"
           })
-          $(".custom-hide-icon").css({
-              "width" : "30px",
-              "height" : "30px",
-          })
-          $(".custom-hide-icon div").css({
-              "width" : "25px",
-              "left" : "10%"
-          })
+          $(".custom-hide-icon").css("display", "none");
+          $(".close a").css("display", "block");
        }
        else if ($(window).width() <= 820) {
            $(".content-info").css("display", "none");
@@ -177,8 +172,11 @@ $(document).ready(function(){
                "transform" : "translateY(-50%)"
            })
            $(".close").css({
-               "top" : "5%"
+               "top" : "5%",
+               "right" : "5%"
            })
+           $(".custom-hide-icon").css("display", "none");
+           $(".close a").css("display", "block");
        }
        if ($(window).width() <= 820) {
           $(".content-info").css("display", "none");

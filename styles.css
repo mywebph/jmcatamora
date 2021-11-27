@@ -208,7 +208,7 @@ body{
     height: 50px;
     border-radius: 50%;
     position: relative;
-    background: #fff;
+    background: rgb(233, 230, 230);
 }
 .custom-hide-icon div{
     position: absolute;
@@ -233,7 +233,6 @@ body{
     top: 0;
     background: #fff;
     padding-top: 150px;
-    background-image: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,1)), url(images/programming.jpg);
 }
 .details{
     padding: 20px;
@@ -274,6 +273,12 @@ body{
     padding: 5px;
     border: 1px solid var(--lightgray);
     caret-color: var(--darkgray);
+}
+.close a{
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    display: none;
 }
 .close:hover{
     text-decoration: underline;
