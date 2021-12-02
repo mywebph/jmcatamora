@@ -70,7 +70,7 @@ $(document).ready(function(){
         window.open("https://facebook.com/catamora.07/", "_blank")
     })
     $(".web").on("click", function(){
-        window.open("https://1910598john.github.io/jmcatamora/", "_blank")
+        window.open("https://1910598john.github.io/portfolio/", "_blank")
     })
     $(".facebook").live("click", function(){
         window.open("https://www.facebook.com/catamora.07/", "_blank");
