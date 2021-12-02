@@ -214,16 +214,21 @@ $(document).ready(function(){
         $(".arrow").css("visibility", "hidden");
     })
     //DISPLAY TIME
-    const now = new Date();
-    var hr = now.getHours();
-    var min = now.getMinutes();
-    if (min < 10) {
-        min = "0" + min;
+
+    var int = setInterval(time, 1000);
+    function time(){
+        const now = new Date();
+        var hr = now.getHours();
+        var min = now.getMinutes();
+        if (min < 10) {
+            min = "0" + min;
+        }
+        if (hr < 10) {
+            hr = "0" + hr;
+        }
+        document.getElementById("time-now").innerHTML =  hr + ":" + min;
     }
-    if (hr < 10) {
-        hr = "0" + hr;
-    }
-    document.getElementById("time-now").innerHTML =  hr + ":" + min;
+    
     $(".cover").live("mouseover", function(){
         $(".content-desc p").load("desc/cover.txt");
     })
