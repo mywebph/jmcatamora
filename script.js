@@ -224,9 +224,9 @@ $(document).ready(function(){
         if (min < 10) {
             min = "0" + min;
         }
-        if (hr < 10) {
-            hr = "0" + hr;
-        } 
+        if (hr > 12) {
+            hr = hr - 12;
+        }
         document.getElementById("time-now").innerHTML =  hr + ":" + min + " " + AMPM;
     }
     
