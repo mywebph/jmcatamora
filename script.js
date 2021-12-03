@@ -220,13 +220,14 @@ $(document).ready(function(){
         const now = new Date();
         var hr = now.getHours();
         var min = now.getMinutes();
+        var AMPM = hr >= 12 ? "PM" : "AM";
         if (min < 10) {
             min = "0" + min;
         }
         if (hr < 10) {
             hr = "0" + hr;
-        }
-        document.getElementById("time-now").innerHTML =  hr + ":" + min;
+        } 
+        document.getElementById("time-now").innerHTML =  hr + ":" + min + " " + AMPM;
     }
     
     $(".cover").live("mouseover", function(){
