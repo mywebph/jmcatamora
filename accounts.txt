@@ -10,7 +10,7 @@
                 <div class="icon"><i class="fab fa-instagram"></i></div>
                 <div class="account-link">
                     <span class="title">Instagram</span>
-                    <span class="link">shorturl.at/cqwEJ</span>
+                    <span class="link">shorturl.at/orHMY</span>
                 </div>
             </div>
             <div class="youtube account_container" title="Check out my Youtube.">
