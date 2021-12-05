@@ -1,11 +1,5 @@
 <div class="accounts" id="acc2">
-            <div class="facebook account_container" title="Add me on Facebook.">
-                <div class="icon"><i class="fab fa-facebook"></i></div>
-                <div class="account-link">
-                    <span class="title">Facebook</span>
-                    <span class="link">shorturl.at/ewEX2</span>
-                </div>
-            </div>
+            
             <div class="instagram account_container" title="Follow me on Instagram.">
                 <div class="icon"><i class="fab fa-instagram"></i></div>
                 <div class="account-link">
