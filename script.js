@@ -62,6 +62,7 @@ $(document).ready(function(){
         req.open("GET", "accounts.txt");
         req.send();
     }
+
     $(".view").click(function(){
         $(".arrow").css("display", "block");
     })
@@ -76,7 +77,7 @@ $(document).ready(function(){
         window.open("https://www.facebook.com/catamora.07/", "_blank");
     })
     $(".instagram").live("click", function(){
-        window.open("https://www.instagram.com/catamora.jm/", "_blank");
+        window.open("https://www.instagram.com/lucius.castus07/", "_blank");
     })
     $(".youtube").live("click", function(){
         window.open("https://shorturl.at/deuK9", "_blank");
