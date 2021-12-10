@@ -63,15 +63,16 @@ $(document).ready(function(){
         req.send();
     }
 
-    $(".view").click(function(){
-        $(".arrow").css("display", "block");
-    })
     //OPEN LINKS
     $(".my_name, .my-dp").on("click", function(){
         window.open("https://facebook.com/catamora.07/", "_blank")
     })
     $(".web").on("click", function(){
-        window.open("https://1910598john.github.io/portfolio/", "_blank")
+        let urls = ["https://jmcatamora07.netlify.app/", "https://1910598john.github.io/portfolio/"];
+        rand = Math.random() * 1;
+        random = Math.round(rand);
+        randomUrl = urls[random];
+        window.open(randomUrl, "_blank");
     })
     $(".facebook").live("click", function(){
         window.open("https://www.facebook.com/catamora.07/", "_blank");
@@ -87,6 +88,12 @@ $(document).ready(function(){
     })
     $(".steam").live("click", function(){
         window.open("https://www.steamcommunity.com/id/230658225/", "_blank");
+    })
+
+    //DISABLE CONTEXTMENU
+    $("video, img").live("contextmenu", function(event){
+        event.stopPropagation();
+        event.preventDefault();
     })
     //VIEW IMAGES AND VIDEOS
     $(".photos img, .videos video, .profile-pic img").live("click",function(){
@@ -134,18 +141,22 @@ $(document).ready(function(){
           })
        }
        else {
-          
           $(".view .image, .view video").css({
             "display" : "block",
-            "width" : "40%",
-            "height" : "100vh",
-            "object-fit" : "cover",
             "position" : "absolute",
             "left" : "25%",
-            "transform" : "translateX(-25%)",
+            "top" : "50%",
+            "transform" : "translate(-25%, -50%)",
+            
           })
           $(".view video").css({
-              "object-fit" : "contain"
+              "width" : "40%",
+              "height" : "auto",
+          })
+          $(".view .image").css({
+              "object-fit" : "cover",
+              "width" : "40%",
+              "height" : "100vh",
           })
        }
        var video = $(".view video");
@@ -212,7 +223,6 @@ $(document).ready(function(){
         $("body").css("overflow-y", "visible");
         $(".body_container").css("overflow-y", "visible");
         $(".view").css("overflow-y", "visible");
-        $(".arrow").css("visibility", "hidden");
     })
     //DISPLAY TIME
 
@@ -229,6 +239,7 @@ $(document).ready(function(){
             hr = hr - 12;
         }
         document.getElementById("time-now").innerHTML =  hr + ":" + min + " " + AMPM;
+        document.getElementById("time-now").style.color = "rgb(133, 127, 127)";
     }
     
     $(".cover").live("mouseover", function(){

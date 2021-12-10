@@ -1,23 +1,21 @@
 <div class="gallery">
   <div class="videos">
     <p style="margin:20px 0;font-size:17px;font-weight:bold;color:var(--darkgray);">Videos</p>
-    <video class="vid vid1" src="videos/vid1.mp4"></video>
-    <video class="vid vid2" src="videos/vid2.mp4"></video>
-    <video class="vid vid3" src="videos/vid3.mp4"></video>
-    <video class="vid vid4" src="videos/vid4.mp4"></video>
-    <video class="vid vid5" src="videos/vid5.mp4"></video>
-    <video class="vid vid6" src="videos/vid6.mp4"></video>
-    <video class="vid vid7" src="videos/vid7.mp4"></video>
-    <video class="vid vid8" src="videos/vid8.mp4"></video>
-    <video class="vid vid9" src="videos/vid9.mp4"></video>
-    <video class="vid vid10" src="videos/vid10.mp4"></video>
-    <video class="vid vid11" src="videos/vid11.mp4"></video>
-    <video class="vid vid12" src="videos/vid12.mp4"></video>
-    <video class="vid vid13" src="videos/vid13.mp4"></video>
-    <video class="vid vid14" src="videos/vid14.mp4"></video>
-    <video class="vid vid15" src="videos/vid15.mp4"></video>
-    <video class="vid vid16" src="videos/vid16.mp4"></video>
-    <video class="vid vid17" src="videos/vid17.mp4"></video>
-    <video class="vid vid18" src="videos/vid18.mp4"></video>
+    <video class="vid vid1" src="videos/vid1.mp4" loop></video>
+    <video class="vid vid2" src="videos/vid2.mp4" loop></video>
+    <video class="vid vid3" src="videos/vid3.mp4" loop></video>
+    <video class="vid vid4" src="videos/vid4.mp4" loop></video>
+    <video class="vid vid5" src="videos/vid5.mp4" loop></video>
+    <video class="vid vid6" src="videos/vid6.mp4" loop></video>
+    <video class="vid vid7" src="videos/vid7.mp4" loop></video>
+    <video class="vid vid8" src="videos/vid8.mp4" loop></video>
+    <video class="vid vid9" src="videos/vid9.mp4" loop></video>
+    <video class="vid vid10" src="videos/vid10.mp4" loop></video>
+    <video class="vid vid11" src="videos/vid11.mp4" loop></video>
+    <video class="vid vid12" src="videos/vid12.mp4" loop></video>
+    <video class="vid vid13" src="videos/vid13.mp4" loop></video>
+    <video class="vid vid15" src="videos/vid15.mp4" loop></video>
+    <video class="vid vid16" src="videos/vid16.mp4" loop></video>
+    <video class="vid vid17" src="videos/vid17.mp4" loop></video>
   </div>
 </div>
