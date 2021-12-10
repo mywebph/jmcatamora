@@ -14,7 +14,6 @@ $(document).ready(function(){
     var preload = document.getElementById("preload");
     window.addEventListener("load", hidePreloader);
     function hidePreloader(){
-        window.history.pushState('accounts', 'accounts', '/accounts');
         preload.style.display = "none";
         document.body.style.overflowY = "visible";
     }
@@ -22,7 +21,6 @@ $(document).ready(function(){
     document.getElementById("videos").addEventListener("click", videos);
     document.getElementById("accounts").addEventListener("click", accounts);
     function photos(){
-        window.history.pushState('photos', 'photos', '/photos');
         const req = new XMLHttpRequest();
         req.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
@@ -37,7 +35,6 @@ $(document).ready(function(){
         req.send();
     }
     function videos(){
-        window.history.pushState('videos', 'videos', '/videos');
         const req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
@@ -52,7 +49,6 @@ $(document).ready(function(){
         req.send();
     }
     function accounts(){
-        window.history.pushState('accounts', 'accounts', '/accounts');
         const req = new XMLHttpRequest();
         req.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
