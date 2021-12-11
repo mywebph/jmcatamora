@@ -70,8 +70,8 @@ $(document).ready(function(){
     $(".web").on("click", function(){
         let urls = ["https://jmcatamora07.netlify.app/", "https://1910598john.github.io/portfolio/"];
         rand = Math.random() * 1;
-        random = Math.round(rand);
-        randomUrl = urls[random];
+        round = Math.round(rand);
+        randomUrl = urls[round];
         window.open(randomUrl, "_blank");
     })
     $(".facebook").live("click", function(){
