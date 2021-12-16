@@ -105,7 +105,63 @@ $(document).ready(function(){
        $("body").css("overflow-y", "hidden");
        $(".body_container").css("overflow-y", "scroll");
        $(".view").css("overflow-y", "scroll");
-      
+       $(window).resize(function(){
+            if ($(window).width() <= 768) {
+                $(".content-info").css("display", "none");
+                $(".view .image, .view video").css({
+                    "display" : "block",
+                    "width" : "100%",
+                    "height" : "70%",
+                    "object-fit" : "contain",
+                    "position" : "absolute",
+                    "top" : "50%",
+                    "transform" : "translateY(-50%)",
+                    "background" : "#000"
+                })
+                $(".close").css({
+                    "top" : "5%",
+                    "right" : "5%"
+                })
+                $(".custom-hide-icon").css("display", "none");
+                $(".close a").css("display", "block");
+            }
+            else if ($(window).width() <= 820) {
+                $(".content-info").css("display", "none");
+                $(".view .image, .view video").css({
+                    "display" : "block",
+                    "width" : "40%",
+                    "height" : "100vh",
+                    "object-fit" : "cover",
+                    "position" : "absolute",
+                    "left" : "50%",
+                    "transform" : "translateX(-50%)",
+                })
+                $(".view video").css({
+                    "object-fit" : "contain"
+                })
+            }
+            else {
+                $(".view .image, .view video").css({
+                "display" : "block",
+                "position" : "absolute",
+                "left" : "25%",
+                "top" : "50%",
+                "transform" : "translate(-25%, -50%)",
+
+                })
+                $(".view video").css({
+                    "width" : "40%",
+                    "height" : "auto",
+                })
+                $(".view .image").css({
+                    "object-fit" : "cover",
+                    "width" : "40%",
+                    "height" : "100vh",
+                })
+                $(".content-info").css("display", "block");
+                $(".custom-hide-icon").css("display", "block");
+            }
+       })
        if ($(window).width() <= 768) {
           $(".content-info").css("display", "none");
           $(".view .image, .view video").css({
