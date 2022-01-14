@@ -8,7 +8,6 @@
       <img class="image image6" src="images/photos/img6.png">
       <img class="image image7" src="images/photos/img7.jpg">
       <img class="image image8" src="images/photos/img8.jpg">
-      <img class="image image9" src="images/photos/img9.jpg">
       <img class="image image10" src="images/photos/img10.jpg">
       <img class="image image12" src="images/photos/img12.png">
   </div>
