@@ -219,6 +219,7 @@ $(document).ready(function(){
        $(video).get(0).play();
        $(video).get(0).currentTime = 0;
        $(video).get(0).controls = true;
+       $(video).get(0).volume = .5;
     })
     
    
@@ -408,4 +409,5 @@ $(document).ready(function(){
         $(".content-desc p").load("desc/vid22.txt");
     })
 })
+let vids = document.getElementsByTagName("VIDEO");
 
